@@ -25,8 +25,7 @@ if st.button("Calculate BMI"):
     else:
         bmi = wt / (ht ** 2)
         st.write(f"Your BMI is: {bmi:.2f}")
-
-prompt = f"Great {name} and Act like an expert nutritionist, evaluate the {bmi} and share a diet chart"
+        prompt = f"Great {name} and Act like an expert nutritionist, evaluate the {bmi} and share a diet chart"
 
 # Generate content from Gemini
 response = client.models.generate_content(
