@@ -5,8 +5,8 @@ google_api_key = st.secrets["google"]["api_key"]
 
 client = genai.Client(api_key = google_api_key)
 
-st.title("Welcome to the AI Health Assistant")
 st.title("BMI Calculator with AI Nutritionist")
+st.title("Your Personalised AI Health Assistant")
 
 st.title("_AI_ is :blue[cool] :sunglasses:")
 
