@@ -19,6 +19,9 @@ gender = st.selectbox("Select your gender:", ["Male", "Female"])
 
 # Calculate BMI
 if st.button("Calculate BMI"):
+    if not name.strip():
+        st.error("Please enter your name.")
+    else:
     bmi = wt / (ht ** 2)
     st.write(f"Your BMI is: {bmi:.2f}")
 
