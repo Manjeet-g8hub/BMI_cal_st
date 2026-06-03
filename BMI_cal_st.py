@@ -31,5 +31,4 @@ if st.button("Calculate BMI"):
         response = client.models.generate_content(
         model="gemini-2.5-flash",
         contents= prompt)
-
-st.write(response.text)
+        st.write(response.text)
